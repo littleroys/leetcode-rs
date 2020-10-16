@@ -30,5 +30,4 @@ mod test {
     pub fn test_empty() {
         assert_eq!(Solution::length_of_last_word("".to_string()), 0)
     }
-
 }
