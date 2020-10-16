@@ -14,11 +14,11 @@ impl Solution {
         let (mut input, mut result) = (input, String::new());
 
         while input[..].len() > 0 {
-            let flag: &char = &input.chars().nth(0).unwrap();
-            let counter = input.chars().take_while(|ch| ch.eq(flag)).count();
+            let flag: char = input.chars().nth(0).unwrap();
+            let counter = input.chars().take_while(|ch| ch.eq(&flag)).count();
             input = &input[counter..];
             result.push_str(&counter.to_string());
-            result.push(flag.clone());
+            result.push(flag);
         }
         result
     }
