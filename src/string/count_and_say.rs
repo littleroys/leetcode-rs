@@ -22,7 +22,6 @@ impl Solution {
         }
         result
     }
-
 }
 
 #[cfg(test)]
