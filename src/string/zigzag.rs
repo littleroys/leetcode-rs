@@ -34,23 +34,23 @@ impl Solution {
 mod test {
     use crate::string::zigzag::Solution;
     #[test]
-    // pub fn test_row_abcde() {
-    //     let actual = Solution::convert("ABCDE".to_string(), 4);
-    //     assert!(actual.eq("ABCED"));
-    // }
-    //
-    //
-    // #[test]
-    // pub fn test_row_abcdefg() {
-    //     let actual = Solution::convert("ABCDEFG".to_string(), 4);
-    //     assert!(actual.eq("AGBFCED"));
-    // }
-    //
-    // #[test]
-    // pub fn test_row_3() {
-    //     let actual = Solution::convert("PAYPALISHIRING".to_string(), 3);
-    //     assert!(actual.eq("PAHNAPLSIIGYIR"));
-    // }
+    pub fn test_row_abcde() {
+        let actual = Solution::convert("ABCDE".to_string(), 4);
+        assert!(actual.eq("ABCED"));
+    }
+
+
+    #[test]
+    pub fn test_row_abcdefg() {
+        let actual = Solution::convert("ABCDEFG".to_string(), 4);
+        assert!(actual.eq("AGBFCED"));
+    }
+
+    #[test]
+    pub fn test_row_3() {
+        let actual = Solution::convert("PAYPALISHIRING".to_string(), 3);
+        assert!(actual.eq("PAHNAPLSIIGYIR"));
+    }
 
     #[test]
     pub fn test_row_4() {
