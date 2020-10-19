@@ -20,7 +20,7 @@ impl Solution {
                     result.push(s.as_bytes()[idx as usize] as char);
                 }
 
-                if r!= 0 && r != (num_rows - 1) && zig_idx < s.len() as i32 {
+                if r != 0 && r != (num_rows - 1) && zig_idx < s.len() as i32 {
                     result.push(s.as_bytes()[zig_idx as usize] as char);
                 }
             }
@@ -38,7 +38,6 @@ mod test {
         let actual = Solution::convert("ABCDE".to_string(), 4);
         assert!(actual.eq("ABCED"));
     }
-
 
     #[test]
     pub fn test_row_abcdefg() {
