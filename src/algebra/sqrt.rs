@@ -1,6 +1,4 @@
 // #69 sqrt(x)
-use std::num;
-
 struct Solution;
 
 impl Solution {

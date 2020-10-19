@@ -10,7 +10,5 @@ impl Solution {
 
 #[cfg(test)]
 mod test {
-    pub fn test_my_decoding() {
-
-    }
+    pub fn test_my_decoding() {}
 }
