@@ -19,9 +19,11 @@ impl Solution {
                 unsafe {
                     std::ptr::swap(&mut v[right - 1], &mut v[left]);
                 }
-                left += 1; right -= 1;
+                left += 1;
+                right -= 1;
             }
-            left = next;right = next;
+            left = next;
+            right = next;
         }
 
         String::from_utf8(v).unwrap()
