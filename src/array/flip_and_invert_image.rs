@@ -36,5 +36,4 @@ mod test {
         let matrix = vec![vec![1, 1, 0], vec![1, 0, 1], vec![0, 0, 0]];
         let result = Solution::flip_and_invert_image(matrix);
     }
-
 }
