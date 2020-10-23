@@ -1,3 +1,4 @@
+pub mod flip_and_invert_image;
 pub mod last_len_word;
 pub mod rotate;
 pub mod spiral_matrix;
