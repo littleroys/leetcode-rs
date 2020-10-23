@@ -34,7 +34,6 @@ mod test {
         assert_eq!(v1, vec![1, 2, 2, 3, 5, 6])
     }
 
-
     #[test]
     pub fn test_merge_sorted_str1() {
         let mut v1 = vec![7, 0, 0, 0];

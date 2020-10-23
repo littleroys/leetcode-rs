@@ -1,6 +1,4 @@
 // #557 reverse words in a string III
-use std::mem::swap;
-
 struct Solution;
 
 impl Solution {
