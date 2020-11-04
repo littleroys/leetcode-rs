@@ -4,10 +4,12 @@ struct Solution;
 impl Solution {
     pub fn running_sum(nums: Vec<i32>) -> Vec<i32> {
         let mut sum = 0;
-        nums.iter().map(|num| {
-            sum = num + sum;
-            sum
-        }).collect()
+        nums.iter()
+            .map(|num| {
+                sum = num + sum;
+                sum
+            })
+            .collect()
     }
 }
 
@@ -18,14 +20,12 @@ mod test {
     #[test]
     pub fn test_running_sum_empty() {
         let num_list = vec![];
-        assert_eq!(Solution::running_sum(num_list),
-                   vec![])
+        assert_eq!(Solution::running_sum(num_list), vec![])
     }
 
     #[test]
     pub fn test_running_sum() {
         let num_list = vec![1, 2, 3, 4];
-        assert_eq!(Solution::running_sum(num_list),
-                   vec![1, 3, 6, 10])
+        assert_eq!(Solution::running_sum(num_list), vec![1, 3, 6, 10])
     }
 }
