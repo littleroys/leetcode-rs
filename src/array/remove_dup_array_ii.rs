@@ -7,7 +7,7 @@ impl Solution {
         let (mut i, mut count) = (0 as i32, nums.len() as i32);
         while i < nums.len() as i32 {
             let mut start = i;
-            println!("{:?}" , nums);
+            println!("{:?}", nums);
             while i < nums.len() as i32 && nums[i as usize] == nums[start as usize] {
                 println!("move =>");
                 i += 1;
@@ -46,8 +46,9 @@ mod test {
         // let mut v2 = vec![0, 0, 1, 1, 1, 1, 1, 2, 2, 3, 3];
         // assert_eq!(Solution::remove_duplicates(&mut v2), 8);
 
-
-        let mut v3 = vec![-41,-40,-40,-40,-40,-40,-40,-39,-38,-38,-38,-38,-37];
+        let mut v3 = vec![
+            -41, -40, -40, -40, -40, -40, -40, -39, -38, -38, -38, -38, -37,
+        ];
 
         Solution::remove_duplicates(&mut v3);
 
