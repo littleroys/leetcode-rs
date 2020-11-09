@@ -1,7 +1,5 @@
 // #1512 number of good pairs
 
-use std::collections::HashMap;
-
 struct Solution;
 
 impl Solution {
