@@ -7,26 +7,20 @@ impl Solution {
         let (mut i, mut count) = (0 as i32, nums.len() as i32);
         while i < nums.len() as i32 {
             let mut start = i;
-            println!("{:?}", nums);
+
             while i < nums.len() as i32 && nums[i as usize] == nums[start as usize] {
-                println!("move =>");
                 i += 1;
             }
 
             let delta: i32 = (i - start - 2) as i32;
 
-            println!("i {}, start {}", i, start);
-
             if delta > 0 {
-                println!("delta {}", delta);
                 count = count - delta;
                 for idx in 0..delta {
                     nums.remove((start + idx) as usize);
                 }
                 i = i - delta;
             }
-
-            println!("after i {}, start {}", i, start);
         }
 
         count
@@ -63,7 +57,6 @@ mod test {
             foo.swap_remove(0);
             foo.swap_remove(0);
             i += 1;
-            println!("i => {}", i);
         }
     }
 }
