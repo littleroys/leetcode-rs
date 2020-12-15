@@ -6,7 +6,7 @@ struct Solution;
 
 impl Solution {
     pub fn permute(nums: &mut Vec<i32>, n: i32) {
-        let result: Vec<Vec<i32>> = Vec::from(Vec::from());
+        let result: Vec<Vec<i32>> = Vec::from(Vec::new());
         if n == 1 {
             println!("{:?}", nums);
             return;
